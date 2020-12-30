@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Utils.EditorUtils.LayerField
+namespace Utils.LayerField
 {
     public class LayerAttribute : PropertyAttribute
     {

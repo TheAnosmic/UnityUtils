@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEditor;
 using UnityEditor.UI;
 
-namespace Utils.UIUtils
+namespace Utils.UI
 {
  
     [CanEditMultipleObjects, CustomEditor(typeof(NonDrawingGraphic), false)]

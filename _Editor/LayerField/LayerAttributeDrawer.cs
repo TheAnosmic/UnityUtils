@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace Utils.EditorUtils.LayerField
+namespace Utils.LayerField
 {
     [CustomPropertyDrawer(typeof(LayerAttribute))]
     public class LayerAttributeDrawer : PropertyDrawer

@@ -4,7 +4,7 @@ using Random = UnityEngine.Random;
 
 namespace Utils.ScriptableObjects.Audio
 {
-	[CreateAssetMenu(menuName = "Audio Events/Composite")]
+	[CreateAssetMenu(menuName = "Utils/Audio Events/Composite")]
 	public class CompositeAudioEvent : AudioEvent
 	{
 		[Serializable]

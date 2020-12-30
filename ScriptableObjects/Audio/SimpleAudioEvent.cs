@@ -4,7 +4,7 @@ using Random = UnityEngine.Random;
 
 namespace Utils.ScriptableObjects.Audio
 {
-	[CreateAssetMenu(menuName = "Audio Events/Simple")]
+	[CreateAssetMenu(menuName = "Utils/Audio Events/Simple")]
 	public class SimpleAudioEvent : AudioEvent
 	{
 		public AudioClip[] clips;
