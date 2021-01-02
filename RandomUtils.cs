@@ -14,5 +14,9 @@ namespace Utils
             }
             return items[_random.Next(0, items.Length)];
         }
+        public static T ChoiceFrom<T>(params T[] items)
+        {
+            return items.Choice();
+        }
     }
 }
