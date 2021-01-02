@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Video;
 
-namespace Utils.VideoUtils
+namespace Utils.Video
 {
     public class VideoSourceFade : MonoBehaviour
     {

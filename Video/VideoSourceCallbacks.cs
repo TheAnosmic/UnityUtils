@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Video;
 using Utils.Events;
 
-namespace Utils.VideoUtils
+namespace Utils.Video
 {
     public class VideoSourceCallbacks : MonoBehaviour
     {

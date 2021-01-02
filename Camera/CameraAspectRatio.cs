@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Utils.CameraUtils
+namespace Utils.Camera
 {
     public class CameraAspectRatio : MonoBehaviour
     {
@@ -10,11 +10,10 @@ namespace Utils.CameraUtils
 
         void Awake(){
 
-            _cam = GetComponent<Camera>();
+            _cam = GetComponent<UnityEngine.Camera>();
 
             float targetAspect = targetResolution.x / targetResolution.y;
             float currentAspect = Screen.width / (float)Screen.height;
-            var startSize = _cam.orthographicSize;
             
             if (Math.Abs(currentAspect - targetAspect) > 0.01f){
                 _cam.orthographicSize /= currentAspect / targetAspect;
