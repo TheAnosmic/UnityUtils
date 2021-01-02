@@ -11,18 +11,18 @@ namespace Utils.EditorUtils
 
         [Range(0, 60)]
         [SerializeField] private int _frame;
-        [SerializeField] private List<GameObject> _objects;
+        [SerializeField] private List<Animator> _animators;
         
 
         private void OnValidate()
         {
             //Debug.Log(_frame);
-            foreach (var o in _objects)
+            foreach (var animator in _animators)
             {
-                var clipInfo = o.GetComponent<Animator>().GetCurrentAnimatorClipInfo(0)[0];
+                var clipInfo = animator.GetCurrentAnimatorClipInfo(0)[0];
                 var clip = clipInfo.clip;
                 var time = _frame / clip.frameRate;
-                clip.SampleAnimation(o, time);
+                clip.SampleAnimation(animator.gameObject, time);
             }
         }
         
